@@ -1069,7 +1069,7 @@ input.prompt-input {
   cursor: pointer;
 }
 .suggestion-item.is-selected {
-  background-color: var(--background-secondary);
+  background-color: var(--text-highlight-bg);
 }
 .suggestion-hotkey {
   padding: 0 10px;
