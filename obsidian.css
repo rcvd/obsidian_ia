@@ -274,6 +274,7 @@ input[type="number"] {
 /* Remove external link icon */
 .markdown-preview-view .external-link {
 	background-image: none; 
+	padding-right: 0px;
 }
 
 /* Code blocks and inline code */
