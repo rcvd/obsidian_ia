@@ -543,7 +543,7 @@ body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover  {
   background-color: var(--menu-selection);
   color: var(--menu-selection-text);
-  height: 20px;
+  height: 28px;
 }
 
 /* Fix round borders */
