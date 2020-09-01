@@ -440,6 +440,14 @@ input[type="number"] {
 	margin-block-end: 0px;
 }
 
+.markdown-embed-title {
+  font-size: 16px;
+}
+
+.file-embed-title {
+	font-size: 16px;
+}
+
 /* USER INTERFACE SETTINGS */
 
 .backlink-pane,
