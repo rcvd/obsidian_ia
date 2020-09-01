@@ -604,3 +604,19 @@ body:not(.is-grabbing) .nav-folder-title:hover  {
 .workspace-leaf-resize-handle {
 	background-color: var(--background-secondary-alt)
 }
+
+.popover.hover-popover {
+    max-height: 600px;  
+    min-height: 100px;
+    width: 400px;     
+}
+
+.popover.hover-popover .markdown-embed {
+  padding: 5px 20px 15px 20px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.popover.hover-popover .markdown-embed h1 {
+	font-size: 16px;
+}
