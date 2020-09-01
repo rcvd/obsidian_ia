@@ -247,6 +247,24 @@ input[type="number"] {
 
 /* MARKDOWN PREVIEW SETTINGS */
 
+/* Tags */
+.tag {
+	background-color: var(--background-tag);
+	border: 1px solid var(--background-secondary-alt);
+	color: var(--text-tag);
+	font-size: 14px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	text-decoration: none;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.markdown-preview-view a.tag {
+	color: var(--text-tag);
+}
+
 /* Markdown Preview */
 .markdown-preview-view {
 	background-color: var(--background-preview);
