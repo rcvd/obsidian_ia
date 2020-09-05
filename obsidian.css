@@ -358,9 +358,17 @@ input[type="number"] {
 	margin-block-start: 0em;
 }
 
+.markdown-preview-view ul:first-child {
+	margin-bottom: 30px;
+}
+
 .markdown-preview-view ul li {
 	margin-bottom: 0px;
 }
+
+.markdown-preview-view ul li p {
+	margin-bottom: 0px;
+} 
 
 /* Markdown Headings */
 .markdown-preview-view h1,
