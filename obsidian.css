@@ -358,7 +358,7 @@ input[type="number"] {
 	margin-block-start: 0em;
 }
 
-.markdown-preview-view ul:first-child {
+.markdown-preview-section > ul:first-child {
 	margin-bottom: 30px;
 }
 
