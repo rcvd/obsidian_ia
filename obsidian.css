@@ -448,7 +448,7 @@ input[type="number"] {
 }
 .markdown-preview-view .task-list-item { text-indent: -0.5em; margin-left:0;}
 .markdown-preview-view .task-list-item-checkbox { margin-left:-25px; } 
-.markdown-preview-view .task-list-item { padding-inline-start:25px; }
+.markdown-preview-view .task-list-item { padding-inline-start:0px; }
 
 .markdown-preview-view hr {
 	background-color: var(--text-normal);
