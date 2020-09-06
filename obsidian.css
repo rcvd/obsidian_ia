@@ -358,7 +358,8 @@ input[type="number"] {
 	margin-block-start: 0em;
 }
 
-.markdown-preview-section > ul:first-child {
+.markdown-preview-section > ul:first-child,
+.markdown-preview-section > ol:first-child {
 	margin-bottom: 30px;
 }
 
