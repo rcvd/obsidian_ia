@@ -747,7 +747,10 @@ input[type="number"],
   background-color: var(--background-quick);
   box-shadow: 0px 0px 25px var(--text-faint);
 }
-.workspace-tab-header-inner {
+.workspace-tab-header, 
+.workspace-tab-header-inner, 
+.workspace-tab-container-before, 
+.workspace-tab-container-after {
 	border-top: 1px solid var(--background-secondary-alt);
 }
 .theme-dark .prompt {
