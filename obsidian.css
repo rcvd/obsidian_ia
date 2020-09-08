@@ -137,6 +137,13 @@ input[type="number"],
 	font-family: var(--font-monospace);
 }
 
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"] {
+	font-size: 13px;
+}
+
 /* MARKDOWN EDITOR SETTINGS */
 
 /* Code Block Markdown */
