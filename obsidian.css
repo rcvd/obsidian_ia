@@ -12,6 +12,7 @@
 	--background-secondary: 		#fcfcfc;  /* File Pane */
 	--background-secondary-alt: #ecebea;  /* App Background */
 	--background-tag: 					#ffffff;
+  --background-modifier-cover: #fcfcfc;
 	--interactive-accent: 			#00c1ff;
 	--interactive-accent-rgb: 	0, 193, 255;
 	--interactive-accent-hover: #00b1ef;
@@ -28,6 +29,7 @@
 	--text-on-accent:						#f7f7f7;
 	--text-selection:						rgba(51, 190, 242, 0.25);
 	--text-tag:									#8c8c8c;
+  --text-on-accent:           #191919;
 }
 
 
@@ -40,6 +42,7 @@
 	--background-secondary: 		#141514;	/* File Pane */
 	--background-secondary-alt: #080808;	/* App Background */
 	--background-tag: 					#000000;
+  --background-modifier-cover: #141514;
 	--interactive-accent: 			#00c1ff;
 	--interactive-accent-rgb: 	0, 193, 255;
 	--interactive-accent-hover: #00b1ef;
@@ -56,6 +59,7 @@
 	--text-on-accent:						#ffffff;
 	--text-selection:						rgba(51, 190, 242, 0.25);
 	--text-tag:									#8c8c8c;
+  --text-on-accent:           #cbcccc;
 }
 
 /* Reset fonts and colors */
