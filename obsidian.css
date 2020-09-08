@@ -13,7 +13,7 @@
 	--background-secondary: 		#fcfcfc;  /* File Pane */
 	--background-secondary-alt: 	#ecebea;  /* App Background */
 	--background-tag: 				#ffffff;
-	--background-modifier-cover:	#fcfcfc;
+	--background-modifier-cover:	rgba(255,255,255,0.8);
 	--interactive-accent: 			#00b1ef;
 	--interactive-accent-rgb: 		0, 193, 255;
 	--interactive-accent-hover: 	#00c1ff;
@@ -30,6 +30,7 @@
 	--text-on-accent:				#f7f7f7;
 	--text-selection:				rgba(51, 190, 242, 0.25);
 	--text-tag:						#8c8c8c;
+	--background-quick:				#f7f7f7;
 }
 
 
@@ -42,7 +43,7 @@
 	--background-secondary: 		#141514;	/* File Pane */
 	--background-secondary-alt: 	#080808;	/* App Background */
 	--background-tag: 				#000000;
-	--background-modifier-cover: 	#141514;
+	--background-modifier-cover: 	rgba(0,0,0,0.8);;
 	--interactive-accent: 			#00c1ff;
 	--interactive-accent-rgb: 		0, 193, 255;
 	--interactive-accent-hover: 	#00b1ef;
@@ -60,6 +61,7 @@
 	--text-selection:				rgba(51, 190, 242, 0.25);
 	--text-tag:						#8c8c8c;
 	--text-on-accent:           	#cbcccc;
+	--background-quick:				#191a19;
 }
 
 /* Reset fonts and colors */
@@ -739,4 +741,14 @@ input[type="number"],
 .theme-dark :not(pre) > code[class*="language-"], .theme-dark pre[class*="language-"],
 .theme-light :not(pre) > code[class*="language-"], .theme-light pre[class*="language-"] {
 	background-color: var(--background-code-preview)
+}
+
+.theme-light .prompt {
+  background-color: var(--background-quick);
+  box-shadow: 0px 0px 25px var(--text-faint);
+}
+
+.theme-dark .prompt {
+  background-color: var(--background-quick);
+  box-shadow: 0px 0px 25px var(--background-secondary-alt);
 }
