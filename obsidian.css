@@ -623,6 +623,10 @@ input[type="number"],
 	padding: 0 1px 30px 0;
 }
 
+.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
+	border-radius: 0px;
+}
+
 /* Remove highlight line for active window and fix header background */
 .workspace-leaf .view-header,
 .workspace-leaf.mod-active .view-header {
