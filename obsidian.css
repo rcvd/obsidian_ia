@@ -731,3 +731,8 @@ input[type="number"],
 .status-bar {
 	font-size: 13px;
 }
+
+.theme-dark :not(pre) > code[class*="language-"], .theme-dark pre[class*="language-"],
+.theme-light :not(pre) > code[class*="language-"], .theme-light pre[class*="language-"] {
+	background-color: var(--background-code-preview)
+}
