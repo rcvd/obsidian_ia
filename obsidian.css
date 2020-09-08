@@ -663,19 +663,30 @@ input[type="number"],
 }
 
 .workspace-split.mod-vertical > .workspace-split {
-	padding-right: 1px;
+	padding-right: 4px;
 }
 
 .workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
-	padding-right: 0px;
+	padding-right: 4px;
 }
 
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content:last-child {
+	padding-right: 0;
+}	
 .workspace-split.mod-vertical > .workspace-leaf {
-	padding-right: 1px;
+	padding-right: 4px;
 }
 
 .workspace-tab-header-container {
-	padding-top: 0px;
+	padding-top: 0px;	
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+	border-bottom: none;
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
+	background: none;
 }
 
 .popover.hover-popover {
