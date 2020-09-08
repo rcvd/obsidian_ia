@@ -1,65 +1,65 @@
 :root {
-	--default-font: 	'iA Writer Quattro V', 'iA Writer Quattro S', sans-serif;
-	--font-monospace: 'iA Writer Mono V', 'iA Writer Mono S', monospace;
+	--quattro-font: 	'iA Writer Quattro V', 'iA Writer Quattro S', sans-serif;
+	--font-monospace: 	'iA Writer Mono V', 'iA Writer Mono S', monospace;
+	--default-font:		-apple-system, BlinkMacSystemFont, var(--font-monospace);
 }	
 
 .theme-light {
-	--background-code: 					#edeeee;
-	--background-code-preview:  #f0f0f0;
-	--background-preview:				#fcfcfc;
+	--background-code: 				#edeeee;
+	--background-code-preview:  	#f0f0f0;
+	--background-preview:			#fcfcfc;
 	--background-primary: 			#f7f7f7;	/* Editor */
-	--background-primary-alt: 	#f7f7f7;  /* Selected pane and borders */
+	--background-primary-alt: 		#f7f7f7;  /* Selected pane and borders */
 	--background-secondary: 		#fcfcfc;  /* File Pane */
-	--background-secondary-alt: #ecebea;  /* App Background */
-	--background-tag: 					#ffffff;
-  --background-modifier-cover: #fcfcfc;
-	--interactive-accent: 			#00c1ff;
-	--interactive-accent-rgb: 	0, 193, 255;
-	--interactive-accent-hover: #00b1ef;
-	--menu-selection:						#c4c3c2;	/* Menu Selected Item */
+	--background-secondary-alt: 	#ecebea;  /* App Background */
+	--background-tag: 				#ffffff;
+	--background-modifier-cover:	#fcfcfc;
+	--interactive-accent: 			#00b1ef;
+	--interactive-accent-rgb: 		0, 193, 255;
+	--interactive-accent-hover: 	#00c1ff;
+	--menu-selection:				#c4c3c2;	/* Menu Selected Item */
 	--menu-selection-text:			#191919;	/* Menu Selected Item Text */
-	--scrollbar-bg:  						#f7f7f7;
-	--table-line:								#f1f1f1;
-	--text-accent:							#00c1ff;
-	--text-accent-hover:				#00b1ef;
-	--text-faint:								#6e6f72;
-	--text-highlight-bg:				#fde466;
-	--text-muted:								#101010;
-	--text-normal:							#191919;	
-	--text-on-accent:						#f7f7f7;
-	--text-selection:						rgba(51, 190, 242, 0.25);
-	--text-tag:									#8c8c8c;
-  --text-on-accent:           #191919;
+	--scrollbar-bg:  				#fcfcfc;
+	--table-line:					#f1f1f1;
+	--text-accent:					#00b1ef;
+	--text-accent-hover:			#00c1ff;
+	--text-faint:					#9c9c9c;
+	--text-highlight-bg:			#fde466;
+	--text-muted:					#101010;
+	--text-normal:					#191919;	
+	--text-on-accent:				#f7f7f7;
+	--text-selection:				rgba(51, 190, 242, 0.25);
+	--text-tag:						#8c8c8c;
 }
 
 
 .theme-dark {
-	--background-code: 					#242524;
-	--background-code-preview:  #1d1d1e;
-	--background-preview:				#101010;
-	--background-primary:				#191a19;	/* Editor */
-	--background-primary-alt: 	#191a19;	/* Selected pane and borders */
+	--background-code: 				#242524;
+	--background-code-preview:  	#1d1d1e;
+	--background-preview:			#101010;
+	--background-primary:			#191a19;	/* Editor */
+	--background-primary-alt: 		#191a19;	/* Selected pane and borders */
 	--background-secondary: 		#141514;	/* File Pane */
-	--background-secondary-alt: #080808;	/* App Background */
-	--background-tag: 					#000000;
-  --background-modifier-cover: #141514;
+	--background-secondary-alt: 	#080808;	/* App Background */
+	--background-tag: 				#000000;
+	--background-modifier-cover: 	#141514;
 	--interactive-accent: 			#00c1ff;
-	--interactive-accent-rgb: 	0, 193, 255;
-	--interactive-accent-hover: #00b1ef;
-	--menu-selection:						#5f5d5b;  /* Menu Selected Item */
+	--interactive-accent-rgb: 		0, 193, 255;
+	--interactive-accent-hover: 	#00b1ef;
+	--menu-selection:				#5f5d5b;  /* Menu Selected Item */
 	--menu-selection-text:			#cbcccc;	/* Menu Selected Item Text */
-	--scrollbar-bg:  						#191919;
-	--table-line:								#e6e6e6;
-	--text-accent:							#00c1ff;
-	--text-accent-hover:				#00b1ef;
-	--text-faint:								#8e8f92;
-	--text-highlight-bg:				#794b0e;
-	--text-muted:								#ecebea;
-	--text-normal:							#cbcccc;
-	--text-on-accent:						#ffffff;
-	--text-selection:						rgba(51, 190, 242, 0.25);
-	--text-tag:									#8c8c8c;
-  --text-on-accent:           #cbcccc;
+	--scrollbar-bg:  				#191919;
+	--table-line:					#e6e6e6;
+	--text-accent:					#00c1ff;
+	--text-accent-hover:			#00b1ef;
+	--text-faint:					#8e8f92;
+	--text-highlight-bg:			#794b0e;
+	--text-muted:					#ecebea;
+	--text-normal:					#cbcccc;
+	--text-on-accent:				#ffffff;
+	--text-selection:				rgba(51, 190, 242, 0.25);
+	--text-tag:						#8c8c8c;
+	--text-on-accent:           	#cbcccc;
 }
 
 /* Reset fonts and colors */
@@ -88,67 +88,50 @@ body,
 }
 
 /* Fix all font-family settings to use the the font variables */
-button {
-	font-family: var(--default-font);
-}
-
+button
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="number"] {
-	font-family: var(--default-font);
-}
-
-.dropdown {
-	font-family: var(--default-font);
-}
-
+input[type="number"],
+.splash-brand-name,
+.dropdown,
+.setting-hotkey,
 .suggestion-hotkey {
-	font-family: var(--font-monospace);
+	font-family: var(--default-font);
 }
 
-.hidden-token {
-	font-family: var(--font-monospace);
+.markdown-source-view,
+.markdown-preview-view {
+	font-family: var(--quattro-font);
 }
 
-.CodeMirror span.hmd-hidden-token.cm-formatting-code,
-.CodeMirror span.hmd-hidden-token.cm-formatting-em,
-.CodeMirror span.hmd-hidden-token.cm-formatting-link,
-.CodeMirror span.hmd-hidden-token.cm-formatting-strikethrough,
-.CodeMirror span.hmd-hidden-token.cm-formatting-strong {
-	font-family: var(--font-monospace);
-}
-
-.cm-s-obsidian.CodeMirror .HyperMD-hover > .HyperMD-hover-content code,
 .cm-s-obsidian .hmd-fold-html-stub,
 .cm-s-obsidian .hmd-fold-code-stub,
-.cm-s-obsidian .cm-formatting-code,
+.cm-s-obsidian.CodeMirror .HyperMD-hover > .HyperMD-hover-content code,
 .cm-s-obsidian .cm-formatting-hashtag,
-.cm-s-obsidian .cm-hmd-frontmatter,
-.cm-s-obsidian .cm-hmd-orgmode-markup,
+.cm-s-obsidian .cm-formatting-highlight,
 .cm-s-obsidian .cm-inline-code,
-.cm-s-obsidian .cm-math,
-.cm-s-obsidian .CodeMirror-linewidget kbd,
 .cm-s-obsidian .HyperMD-codeblock,
 .cm-s-obsidian .HyperMD-hr,
-.cm-s-obsidian .hmd-fold-html kbd, 
-.cm-s-obsidian span.hmd-fold-math-placeholder{
-	font-family: var(--font-monospace);
-}
-
-.editor {
-	font-family: var(--font-monospace);
-}
-
-.setting-hotkey {
-	font-family: var(--font-monospace);
-}
-
-.top-titlebar-text {
-	font-family: var(--font-monospace);
-}
-
-.splash-brand-name {
+.cm-s-obsidian .cm-hmd-frontmatter,
+.cm-s-obsidian .cm-hmd-orgmode-markup,
+.cm-s-obsidian .cm-formatting-code,
+.cm-s-obsidian .cm-formatting-header,
+.cm-s-obsidian .cm-formatting-link,
+.cm-s-obsidian .cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder,
+.cm-s-obsidian .CodeMirror-linewidget kbd,
+.cm-s-obsidian .hmd-fold-html kbd,
+.CodeMirror span.hmd-hidden-token.cm-formatting-em,
+.CodeMirror span.hmd-hidden-token.cm-formatting-strong,
+.CodeMirror span.hmd-hidden-token.cm-formatting-strikethrough,
+.CodeMirror span.hmd-hidden-token.cm-formatting-code,
+.CodeMirror span.hmd-hidden-token.cm-formatting-link,
+.editor, 
+.hidden-token,
+.cm-s-obsidian span.cm-formatting-task,
+.cm-s-obsidian span.cm-formatting-list,
+.cm-s-obsidian span.cm-formatting-quote {
 	font-family: var(--font-monospace);
 }
 
@@ -181,45 +164,24 @@ input[type="number"] {
 
 .CodeMirror .cm-inline-code,
 .CodeMirror .cm-math {
-	color: var(--text-normal);;
+	color: var(--text-normal);
 }
 
 /* Reset colors */
 .cm-s-obsidian span.cm-tag, 
 .cm-s-obsidian span.cm-hmd-escape-char,
-.cm-s-obsidian span.cm-hmd-escape-backslash {
-	color: inherit;
-}
-
+.cm-s-obsidian span.cm-hmd-escape-backslash,
 .cm-s-obsidian span.cm-link, 
-.cm-s-obsidian span.cm-hmd-internal-link {
-	color: inherit;
-}
-
-.cm-s-obsidian span.cm-inline-code {
-	color: inherit;
-}
-
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math, 
-.cm-s-obsidian span.hmd-fold-math-placeholder {
+.cm-s-obsidian span.hmd-fold-math-placeholder   {
 	color: inherit;
 }
 
-
-.cm-s-obsidian span.cm-url {
-	color: var(--menu-selection);
-}
-
-.cm-s-obsidian pre.HyperMD-footnote {
-	font-size: inherit;
-	padding-left: 0px;
-}
-
-.cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote {
-	color: var(--menu-selection);
-}
-
-.cm-s-obsidian span.cm-formatting-link {
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote,
+.cm-s-obsidian span.cm-formatting-link  {
 	color: var(--menu-selection);
 }
 
@@ -248,6 +210,18 @@ input[type="number"] {
 	border-top-right-radius: 20px; 
 	padding-right: 5px;
 }
+
+.cm-s-obsidian pre.HyperMD-footnote {
+	font-size: inherit;
+	padding-left: 0px;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight, 
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark {
+	padding: 2px 1px 2px 1px;
+}
+
 
 /* MARKDOWN PREVIEW SETTINGS */
 
@@ -291,7 +265,7 @@ input[type="number"] {
 /* Remove external link icon */
 .markdown-preview-view .external-link {
 	background-image: none; 
-	padding-right: 0px;
+	padding-right: 0;
 }
 
 /* Code blocks and inline code */
@@ -332,7 +306,7 @@ input[type="number"] {
 }
 
 .markdown-preview-view blockquote {
-	border: 0px;
+	border: 0;
 	border-left: 1px solid var(--text-normal);
 	border-radius: 0;
 	margin-bottom: 25px;
@@ -343,8 +317,8 @@ input[type="number"] {
 }
 
 .markdown-preview-view blockquote:first-child {
-	margin-bottom: 0px; 
-	margin-left: 0px;
+	margin-bottom: 0; 
+	margin-left: 0;
 }
 
 .markdown-preview-view blockquote:last-child {
@@ -352,8 +326,7 @@ input[type="number"] {
 }
 
 .markdown-preview-view blockquote p:first-child {
-
-	margin-bottom: 0px; 
+	margin-bottom: 0; 
 }
 
 .markdown-preview-view ul {
@@ -368,18 +341,25 @@ input[type="number"] {
 }
 
 .markdown-preview-view ul li {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .markdown-preview-view ul li p {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 } 
 
 /* Markdown Headings */
-.markdown-preview-view h1,
-.markdown-preview-view h2
-{
-	margin-bottom: 5px;
+.markdown-preview-view h1 {
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 30px;
+	margin-bottom: 16px; 
+}
+
+.markdown-preview-view h2 {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 30px; 
 	margin-top: 10px;
 }
 
@@ -395,19 +375,6 @@ input[type="number"] {
 
 .markdown-preview-view h6 {
 	line-height: 16px;
-}
-
-.markdown-preview-view h1 {
-	font-size: 16px;
-	line-height: 24px;
-	margin-top: 30px;
-	margin-bottom: 16px; 
-}
-
-.markdown-preview-view h2 {
-	font-size: 16px;
-	line-height: 24px;
-	margin-bottom: 30px; 
 }
 
 .markdown-preview-view h4 {
@@ -471,7 +438,7 @@ input[type="number"] {
 }
 
 .markdown-embed-title {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .file-embed-title {
@@ -483,12 +450,16 @@ input[type="number"] {
 .backlink-pane,
 .pane-empty,
 .search-empty-state {
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .workspace-split.mod-left-split .workspace-leaf-content, 
 .workspace-split.mod-right-split .workspace-leaf-content {
-	font-size: 14px;
+	font-size: 13px;
+}
+
+.pane-clickable-item {
+	font-size: 13px;
 }
 
 .suggestion-item.is-selected {
@@ -502,7 +473,7 @@ input[type="number"] {
 
 .workspace-leaf-content[data-type='search'] .nav-action-button.is-active, 
 .workspace-leaf-content[data-type='backlink'] .nav-action-button.is-active {
-	color: var(--text-accent);
+	color: var(--text-normal);
 	background-color: inherit;
 }
 
@@ -515,9 +486,20 @@ input[type="number"] {
 
 .nav-action-button:hover, .nav-action-button.is-active,
 .view-action:hover, .view-action.is-active {
-	color: var(--text-accent);
+	color: var(--text-normal);
 }
 
+.view-actions {
+	padding: 2px 0;
+}
+
+.view-action {
+	margin: 0 4px;
+}
+
+.view-header-icon {
+	top: 0;
+}
 .list-item:hover .list-item-ending-flair {
 	background-color: var(--background-secondary-alt);
 	color: var(--text-normal);
@@ -526,20 +508,27 @@ input[type="number"] {
 .side-dock-ribbon-tab:hover, 
 .side-dock-ribbon-action:hover,
 .workspace-tab-header:hover {
-	color: var(--text-accent);
+	color: var(--text-normal);
 }
 
 .dropdown {
-	background-image: url('data:image/svg+xml;charset=utf-8, <svg width="100%" height="100%" viewBox="0 0 184 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-877.45,-1362.33)"><g transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,1938.66,2773.3)"><path d="M969.328,1362.33L1061.21,1410.97L877.45,1410.97L969.328,1362.33Z" style="fill:rgb(0,193,255);"/></g></g></svg>');
+	background-image: url('data:image/svg+xml;charset=utf-8, <svg width="100%" height="100%" viewBox="0 0 184 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-877.45,-1362.33)"><g transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,1938.66,2773.3)"><path d="M969.328,1362.33L1061.21,1410.97L877.45,1410.97L969.328,1362.33Z" style="fill:rgb(0,177,239);"/></g></g></svg>');
 	background-size: 1em auto, 100%;
 	border: 1px solid var(--background-modifier-border);
 }
 
 .nav-folder.mod-root > .nav-file-title, 
 .nav-folder.mod-root > .nav-folder-title,
+.nav-file-title, 
+.nav-folder-title {
+	color: var(--text-normal);
+	font-size: 13px;
+}
+
 .view-header-title {
+	font-size: 13px;
 	color: var(--text-faint);
-	font-size: 14px;
+	line-height: 30px;
 }
 
 /* Fix Nav and View Action Buttons Color */
@@ -563,8 +552,25 @@ input[type="number"] {
 .nav-folder.is-active > .nav-file-title, 
 .nav-folder.is-active > .nav-folder-title, 
 .nav-folder.is-active > .nav-folder-collapse-indicator {
-	background-color: var(--text-faint);
-	color: var(--background-primary);
+	background-color: inherit;
+	color: inherit;
+	
+}
+
+.nav-folder-title,
+.nav-file-title {
+	border-top: 1px solid var(--background-secondary-alt);
+}
+
+.nav-file-title-content, 
+.nav-folder-title-content {
+	padding-left: 8px;
+}
+
+.nav-file.is-active .nav-file-title-content, 
+.nav-file.is-active .nav-folder-title-content {
+	border-left: 4px solid var(--text-accent);
+	padding-left: 4px;
 }
 
 .is-being-renamed {
@@ -574,20 +580,16 @@ input[type="number"] {
 /* Fix Menu Hover Color */
 .menu-item:hover,
 .menu-item:hover .menu-item-icon,
-.pane-clickable-item:hover,
-body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
-body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator,
-body:not(.is-grabbing) .nav-file-title:hover,
-body:not(.is-grabbing) .nav-folder-title:hover  {
+.pane-clickable-item:hover {
 	background-color: var(--menu-selection);
 	color: var(--menu-selection-text);
 }
 
 .menu-item:hover .menu-item-icon {
 	height: 20px;
-  width: 28px;
-  top: -4px;
-  vertical-align: middle;
+	width: 28px;
+	top: -5px;
+	vertical-align: middle;
 }
 
 /* Fix round borders */
@@ -613,11 +615,20 @@ body:not(.is-grabbing) .nav-folder-title:hover  {
 	border-radius: 0px;
 }
 
+.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+	border-radius: 0px;
+}
+
+.workspace-tabs {
+	padding: 0 1px 30px 0;
+}
+
 /* Remove highlight line for active window and fix header background */
 .workspace-leaf .view-header,
 .workspace-leaf.mod-active .view-header {
-	background-color: var(--background-primary); 
+	background-color: var(--background-preview); 
 	border-bottom: none;
+	height: 30px;
 }
 
 /* Fix nav folder colors */
@@ -625,7 +636,7 @@ body:not(.is-grabbing) .nav-folder-title:hover  {
 .nav-folder.mod-root > .nav-folder-title,
 .nav-file-title, 
 .nav-folder-title {
-	color: var(--text-faint);
+	color: var(--text-normal);
 }
 
 .nav-folder.mod-root > .nav-file-title:hover, 
@@ -637,19 +648,71 @@ body:not(.is-grabbing) .nav-folder-title:hover  {
 .workspace-leaf-resize-handle {
 	background-color: var(--background-secondary-alt)
 }
+.workspace-leaf-resize-handle:hover {
+	background-color: var(--background-secondary-alt)
+}
+
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+	width: 4px;
+} 
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+	height: 3px;
+}
+
+.workspace-split.mod-vertical > .workspace-split {
+	padding-right: 1px;
+}
+
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
+	padding-right: 0px;
+}
+
+.workspace-split.mod-vertical > .workspace-leaf {
+	padding-right: 1px;
+}
+
+.workspace-tab-header-container {
+	padding-top: 0px;
+}
 
 .popover.hover-popover {
-    max-height: 600px;  
-    min-height: 100px;
-    width: 400px;     
+	max-height: 600px;  
+	min-height: 100px;
+	width: 400px;     
 }
 
 .popover.hover-popover .markdown-embed {
-  padding: 5px 20px 15px 20px;
-  font-size: 13px;
-  line-height: 1.4;
+	padding: 5px 20px 15px 20px;
+	font-size: 13px;
+	line-height: 1.4;
 }
 
 .popover.hover-popover .markdown-embed h1 {
 	font-size: 16px;
+}
+
+.top-titlebar-button {
+	color: var(--text-faint);
+	opacity: 1;
+}
+
+.top-titlebar-button:hover{
+	color: var(--text-normal);
+} 
+
+.view-content {
+	  height: calc(100% - 30px);
+}
+
+.nav-file-title-content, 
+.nav-folder-title-content {
+	border-radius: 0;
+	border: none;
+}
+
+.status-bar {
+	font-size: 13px;
 }
