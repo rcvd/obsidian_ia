@@ -661,9 +661,11 @@ input[type="number"] {
 .workspace-leaf-resize-handle {
 	background-color: var(--background-secondary-alt)
 }
+/*
 .workspace-leaf-resize-handle:hover {
 	background-color: var(--background-secondary-alt)
 }
+*/
 
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, 
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
