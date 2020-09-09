@@ -31,6 +31,7 @@
 	--text-selection:				#c9e9f4;
 	--text-tag:						#8c8c8c;
 	--background-quick:				#f7f7f7;
+	--file-hr: 						#ecebea;
 }
 
 
@@ -41,7 +42,7 @@
 	--background-primary:			#191a19;	/* Editor */
 	--background-primary-alt: 		#191a19;	/* Selected pane and borders */
 	--background-secondary: 		#141514;	/* File Pane */
-	--background-secondary-alt: 	#080808;	/* App Background */
+	--background-secondary-alt: 	#242524;	/* App Background */
 	--background-tag: 				#000000;
 	--background-modifier-cover: 	rgba(0,0,0,0.8);;
 	--interactive-accent: 			#00c1ff;
@@ -62,6 +63,7 @@
 	--text-tag:						#8c8c8c;
 	--text-on-accent:           	#cbcccc;
 	--background-quick:				#191a19;
+	--file-hr:						#2e2e2e;
 }
 
 /* Reset fonts and colors */
@@ -474,6 +476,7 @@ input[type="number"] {
 .suggestion-item.is-selected {
 	background-color: var(--menu-selection);
 	color: var(--menu-selection-text);
+	border-radius: 5px;
 }
 
 .side-dock-collapsible-section-header {
@@ -568,7 +571,7 @@ input[type="number"] {
 
 .nav-folder-title,
 .nav-file-title {
-	border-top: 1px solid var(--background-secondary-alt);
+	border-top: 1px solid var(--file-hr);
 }
 
 .nav-file-title-content, 
@@ -629,7 +632,7 @@ input[type="number"] {
 }
 
 .workspace-tabs {
-	padding: 0 1px 30px 0;
+	padding: 0 4px 30px 0;
 }
 
 .workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
