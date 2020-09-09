@@ -764,3 +764,7 @@ input[type="number"] {
   background-color: var(--background-quick);
   box-shadow: 0px 0px 25px var(--background-secondary-alt);
 }
+
+.markdown-preview-view ul > li.task-list-item {
+	margin-left: 0;
+}
