@@ -32,6 +32,7 @@
 	--text-tag:						#8c8c8c;
 	--background-quick:				#f7f7f7;
 	--file-hr: 						#ecebea;
+	--leaf-handle:					#ecebea;
 }
 
 
@@ -64,6 +65,7 @@
 	--text-on-accent:           	#cbcccc;
 	--background-quick:				#191a19;
 	--file-hr:						#2e2e2e;
+	--leaf-handle:					#242524;
 }
 
 /* Reset fonts and colors */
@@ -662,7 +664,7 @@ input[type="number"] {
 
 /* Fix workspace leaf handle */
 .workspace-leaf-resize-handle {
-	background-color: var(--background-secondary-alt)
+	background-color: var(--leaf-handle);
 }
 /*
 .workspace-leaf-resize-handle:hover {
