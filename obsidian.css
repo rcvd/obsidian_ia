@@ -752,6 +752,10 @@ input[type="number"] {
 	color: var(--text-normal);
 }
 
+.titlebar-inner {
+	color: var(--text-normal);
+}
+
 .theme-dark :not(pre) > code[class*="language-"], .theme-dark pre[class*="language-"],
 .theme-light :not(pre) > code[class*="language-"], .theme-light pre[class*="language-"] {
 	background-color: var(--background-code-preview)
