@@ -138,7 +138,7 @@ input[type="number"],
 .cm-s-obsidian span.cm-formatting-task,
 .cm-s-obsidian span.cm-formatting-list,
 .cm-s-obsidian span.cm-formatting-quote {
-	font-family: var(--font-monospace);
+	font-family: var(--quattro-font);
 }
 
 input[type="text"], 
