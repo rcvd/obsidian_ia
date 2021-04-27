@@ -779,3 +779,9 @@ input[type="number"] {
 .markdown-preview-view ul > li.task-list-item {
 	margin-left: 0;
 }
+
+/* Vim mode cursor */
+.cm-fat-cursor .CodeMirror-cursor {
+	background-color: var(--text-accent);
+	opacity: 0.7;
+}
