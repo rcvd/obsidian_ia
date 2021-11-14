@@ -862,7 +862,6 @@ input[type="number"] {
 .kanban-plugin__grow-wrap>textarea:focus {
     font-family: var(--quattro-font);
     display: flex;
-    overflow: scroll;
 }
 
 /* set lane title color */
