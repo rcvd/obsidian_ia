@@ -601,7 +601,7 @@ input[type="number"] {
 }
 
 .view-header-title {
-    font-size: 13px;
+    font-size: 1em;
     color: var(--text-faint);
     line-height: 30px;
 }
@@ -852,7 +852,7 @@ input[type="number"] {
     opacity: 0.7;
 }
 
-/* Kanban Support */
+/* Kanban Plugin */
 
 /* UI/preview font */
 .kanban-plugin__markdown-preview-view {
@@ -902,4 +902,7 @@ body .kanban-plugin__lane {
 }
 .kanban-plugin__markdown-preview-view:not(>div>*:last-child) {
     background-color: var(--background-primary) !important;
+}
+body .kanban-plugin__markdown-preview-view, body .kanban-plugin__grow-wrap > textarea, body .kanban-plugin__grow-wrap::after, body .kanban-plugin__item-title p {
+    background-color: var(--background-primary);
 }
