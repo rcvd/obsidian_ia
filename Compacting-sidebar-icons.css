@@ -1,0 +1,19 @@
+/* --------------- */
+/* Default ribbon sidedock icons */
+
+.side-dock-ribbon-action {
+  padding:6px 0;
+}
+.side-dock-settings {
+  padding-bottom:20px;
+}
+body.hider-frameless:not(.hider-ribbon) .side-dock-actions {
+  padding-top:24px;
+}
+body:not(.hider-ribbon) .side-dock-ribbon-action {
+  padding:6px 0 0 0;
+}
+.workspace-ribbon-collapse-btn {
+  margin:0;
+  padding-top:8px;
+}
