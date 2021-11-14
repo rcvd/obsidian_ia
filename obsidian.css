@@ -890,11 +890,16 @@ body .kanban-plugin__lane {
     border:var(--background-primary);
 }
 
-/* make text and wrapper the same color */
+/* make wrapper and background the same color */
 .kanban-plugin__markdown-preview-view>div>*:first-child,
 .kanban-plugin__markdown-preview-view>div>*:last-child {
     margin-top: 0;
     background-color: var(--background-primary) !important;
+}
+.kanban-plugin__markdown-preview-view>div>* {
+    overflow-x: auto;
+    overflow-wrap: break-word;
+    background-color: var(--background-primary);
 }
 .kanban-plugin__markdown-preview-view:not(>div>*:last-child) {
     background-color: var(--background-primary) !important;
