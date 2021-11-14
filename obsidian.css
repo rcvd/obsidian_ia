@@ -601,7 +601,7 @@ input[type="number"] {
 }
 
 .view-header-title {
-    font-size: 13px;
+    font-size: 1em;
     color: var(--text-faint);
     line-height: 30px;
 }
@@ -850,4 +850,59 @@ input[type="number"] {
 .cm-fat-cursor .CodeMirror-cursor {
     background-color: var(--text-accent);
     opacity: 0.7;
+}
+
+/* Kanban Plugin */
+
+/* UI/preview font */
+.kanban-plugin__markdown-preview-view {
+    font-family: var(--quattro-font) !important;
+}
+/* editor font */
+.kanban-plugin__grow-wrap>textarea:focus {
+    font-family: var(--quattro-font);
+    display: flex;
+}
+
+/* set lane title color */
+.kanban-plugin__markdown-preview-view>div>.frontmatter-container {
+    background-color: var(--background-primary) !important;
+}
+.kanban-plugin__grow-wrap>textarea, .kanban-plugin__grow-wrap:after {
+    border: 1px solid var(--background-modifier-border);
+    padding: 5px 7px;
+    font: inherit;
+    line-height: 1.5;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: .875rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    background-color: var(--background-primary);
+    font-family: var(--quattro-font);
+}
+
+/* set lane color */
+body .kanban-plugin__lane {
+    background:transparent;
+    padding:0;
+    border:var(--background-primary);
+}
+
+/* make wrapper and background the same color */
+.kanban-plugin__markdown-preview-view>div>*:first-child,
+.kanban-plugin__markdown-preview-view>div>*:last-child {
+    margin-top: 0;
+    background-color: var(--background-primary) !important;
+}
+.kanban-plugin__markdown-preview-view>div>* {
+    overflow-x: auto;
+    overflow-wrap: break-word;
+    background-color: var(--background-primary);
+}
+.kanban-plugin__markdown-preview-view:not(>div>*:last-child) {
+    background-color: var(--background-primary) !important;
+}
+body .kanban-plugin__markdown-preview-view, body .kanban-plugin__grow-wrap > textarea, body .kanban-plugin__grow-wrap::after, body .kanban-plugin__item-title p {
+    background-color: var(--background-primary);
 }
